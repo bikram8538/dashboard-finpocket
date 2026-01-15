@@ -68,7 +68,7 @@ body {
   --bg-white: #ffffff;
   --bg-black: #000000;
   --bg: #0b0d0f;
-  --panel: rgba(30, 33, 36, 0.85);
+  --panel: #282828;
   --panel-2: rgba(24, 27, 30, 0.9);
   --stroke: rgba(255, 255, 255, 0.08);
   --muted: rgba(255, 255, 255, 0.6);
@@ -547,7 +547,6 @@ body {
 .row-1 {
   display: grid;
   gap: 16px;
-  grid-template-columns: minmax(240px, 1fr) minmax(0, 3fr) minmax(300px, 360px);
   grid-template-columns: minmax(240px, 0.8fr) minmax(0, 2.2fr) minmax(
       280px,
       1fr
@@ -556,27 +555,22 @@ body {
 .row-2 {
   display: grid;
   gap: 16px;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
-  grid-template-columns: minmax(0, 3fr) minmax(280px, 1fr);
+  grid-template-columns: minmax(0, 3.03fr) minmax(280px, 1fr);
 }
 
 .row-3 {
   display: grid;
   gap: 16px;
-  grid-template-columns:
-    minmax(0, 1fr)
-    minmax(300px, 360px)
-    minmax(300px, 360px);
 
   grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr) minmax(280px, 1fr);
 }
 
 /* ====== CARDS ====== */
 .card {
-  border-radius: 22px;
+  border-radius: 16px;
   border: 1px solid var(--stroke);
   background: var(--panel);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+  /* box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45); */
   overflow: hidden;
   display: flex;
   justify-content: space-between;
