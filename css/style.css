@@ -159,7 +159,7 @@ body {
 /* ====== APP LAYOUT ====== */
 .app {
   height: 100%;
-  padding: 22px;
+  /* padding: 22px; */
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 20px;
@@ -370,7 +370,7 @@ body {
 .main {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--stroke);
-  border-radius: 26px;
+  /* border-radius: 26px; */
   padding: 18px;
   box-shadow: var(--shadow);
   /* overflow: hidden; */
@@ -1286,18 +1286,18 @@ body {
     scrollbar-width: auto; /* ✅ makes it visible */
     scrollbar-color: rgba(185, 255, 90, 0.6) rgba(255, 255, 255, 0.08);
   }
+  .main {
+    padding: 14px;
+  }
 }
 @media (max-width: 420px) {
   .profile-mini{
     display: none;
   }
-  .app {
+  /* .app {
     padding: 14px;
-  }
+  } */
 
-  .main {
-    padding: 14px;
-  }
 
   .card-head {
     flex-direction: column;
