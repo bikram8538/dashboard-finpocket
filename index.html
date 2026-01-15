@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Fin Pocket</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="menuToggle" class="menu-toggle" />
+    <div class="app">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <label for="menuToggle" class="sidebar-close">✕</label>
+        <div class="brand">
+          <a href="#" class="brand-logo">
+            <figure>
+              <img src="./assets/dashboard/logo.svg" alt="logo" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="user">
+          <div class="user-img"></div>
+          <div class="user-info">
+            <h1>Rajan Dutta</h1>
+            <p>Personal Account</p>
+          </div>
+          <div class="user-chevron"></div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+        <nav class="nav top-nav">
+          <a class="nav-link active" href="#">
+            <span class="ico"></span> Dashboard
+          </a>
+          <a class="nav-link" href="#"><span class="ico"></span> Payments</a>
+          <a class="nav-link" href="#"
+            ><span class="ico"></span> Transactions</a
+          >
+          <a class="nav-link" href="#"><span class="ico"></span> My wallets</a>
+          <a class="nav-link" href="#"
+            ><span class="ico"></span> Savings plan</a
+          >
+        </nav>
+
+        <p class="menu-title">PREFERENCE</p>
+        <nav class="nav bottom-nav">
+          <a class="nav-link" href="#"><span class="ico"></span> Promos</a>
+          <a class="nav-link" href="#"><span class="ico"></span> Settings</a>
+          <a class="nav-link" href="#"><span class="ico"></span> Help center</a>
+          <a class="nav-link" href="#"><span class="ico"></span> Log out</a>
+        </nav>
+
+        <div class="upgrade">
+          <div class="upgrade-top">
+            <a href="#" class="brand-logo">
+              <figure>
+                <img src="./assets/dashboard/logo.svg" alt="logo" />
+              </figure>
+            </a>
+          </div>
+          <h2>Upgrade Plans</h2>
+          <p>
+            “Upgrade from today to the smarter insights & financial control”.
+          </p>
+          <a href="#" class="btn btn-white">
+            Upgrade your Plan <span class="arrow">↗</span>
+          </a>
+        </div>
+      </aside>
+      <label for="menuToggle" class="overlay"></label>
+      <!-- MAIN -->
+      <main class="main">
+        <!-- TOPBAR -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <!-- ✅ MENU BUTTON -->
+            <label for="menuToggle" class="menu-btn">☰</label>
+
+            <h1 class="hello">Hello! Rajan,</h1>
+          </div>
+
+          <div class="topbar-right">
+            <div class="search">
+              <input type="text" placeholder="Search" />
+              <span class="search-ico"></span>
+            </div>
+
+            <button class="icon-btn"></button>
+            <button class="icon-btn"></button>
+
+            <div class="profile-mini">
+              <span class="name">Rajan Dutta</span>
+              <span class="avatar"></span>
+            </div>
+          </div>
+        </header>
+
+        <!-- GRID -->
+        <section class="grid">
+          <div class="col">
+            <div class="row row-1">
+              <!-- Total Balance -->
+              <div class="card card-balance">
+                <div class="card-head">
+                  <p class="card-title">Total Balance</p>
+                  <button class="chip-plus">
+                    <figure>
+                      <img
+                        src="./assets/dashboard/plus-icon.svg"
+                        alt="Plus Icon"
+                      />
+                    </figure>
+                  </button>
+                </div>
+
+                <div class="money">
+                  <strong>$ 20,680</strong>
+                  <sup>USD</sup>
+                </div>
+
+                <div class="actions">
+                  <button class="btn btn-green">
+                    Deposite
+                    <figure>
+                      <img
+                        src="./assets/dashboard/top-arrow-icon.svg"
+                        alt="Up Arrow"
+                      />
+                    </figure>
+                  </button>
+                  <button class="btn btn-green">
+                    Send
+                    <figure>
+                      <img
+                        src="./assets/dashboard/down-arrow.svg"
+                        alt="Down Arrow"
+                      />
+                    </figure>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Enhancement -->
+              <div class="card card-enh">
+                <div class="card-head">
+                  <p class="card-title">Enhancement</p>
+                  <button class="btn btn-outline small">
+                    <figure>
+                      <img
+                        src="./assets/dashboard/plus-icon-60.svg"
+                        alt="down arrow"
+                      />
+                    </figure>
+                    Add Enhancement
+                  </button>
+                </div>
+
+                <div class="enh-cards">
+                  <div class="mini-box">
+                    <div class="mini-head">
+                      <figure class="mini-ico">
+                        <img
+                          src="./assets/dashboard/incoming-outgoing-icon.svg"
+                          alt="Income"
+                        />
+                      </figure>
+                      <span class="mini-title">Income</span>
+                    </div>
+                    <div class="mini-bottom">
+                      <strong class="mini-price">$14,480.40</strong>
+                      <span class="mini-pill">+123.5%</span>
+                    </div>
+                  </div>
+
+                  <div class="mini-box">
+                    <div class="mini-head">
+                      <figure class="mini-ico">
+                        <img
+                          src="./assets/dashboard/incoming-outgoing-icon.svg"
+                          alt="Expense"
+                        />
+                      </figure>
+                      <span class="mini-title">Expense</span>
+                    </div>
+                    <div class="mini-bottom">
+                      <strong class="mini-price">$14,480.40</strong>
+                      <span class="mini-pill">-7%</span>
+                    </div>
+                  </div>
+
+                  <div class="mini-box">
+                    <div class="mini-head">
+                      <figure class="mini-ico">
+                        <img
+                          src="./assets/dashboard/saving-mini.svg"
+                          alt="saving"
+                        />
+                      </figure>
+                      <span class="mini-title">Savings</span>
+                    </div>
+                    <div class="mini-bottom">
+                      <strong class="mini-price">$14,480.40</strong>
+                      <span class="mini-pill">+9%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Final score -->
+              <div class="card card-score">
+                <div class="card-head">
+                  <p class="card-title">Final Score</p>
+                  <button class="dot-menu">•••</button>
+                </div>
+
+                <p class="muted">Finance quality</p>
+                <div class="score">
+                  <strong>Excellent</strong>
+                  <span>82%</span>
+                </div>
+
+                <div class="score-bar-wrap" style="--val: 82%">
+                  <div class="score-bar-dark"></div>
+                  <div class="score-bar-light"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-2">
+              <!-- Cashflow Chart -->
+              <div class="card card-chart">
+                <div class="card-head">
+                  <div class="chart-top">
+                    <p class="card-title">Cashflow</p>
+                    <p class="muted">Total Balance</p>
+                    <strong class="big">$ 20,000</strong>
+                  </div>
+
+                  <div class="chart-controls">
+                    <button class="btn btn-outline small">
+                      Last 5 Days
+                      <figure>
+                        <img
+                          src="./assets/dashboard/bottom-chevron-icon.svg"
+                          alt=""
+                        />
+                      </figure>
+                    </button>
+                    <div class="legend">
+                      <span class="dot exp"></span> Expense
+                      <span class="dot inc"></span> Income
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chart-placeholder">
+                  <div class="wave wave-a"></div>
+                  <div class="wave wave-b"></div>
+                  <div class="chart-x">
+                    <span>Sun</span><span>Mon</span><span>Tue</span
+                    ><span>Wed</span><span>Thu</span><span>Fri</span
+                    ><span>Sat</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-bal">
+                <div class="card-head">
+                  <p class="card-title">Balance</p>
+                </div>
+
+                <p class="muted">Total Balance</p>
+                <strong class="big">$122.2631</strong>
+                <div class="pay-cards">
+                  <div class="pay-card">
+                    <div class="pay-ico"></div>
+                    <div class="pay-info">
+                      <p>Platinum Plus Visa</p>
+                      <strong>$122.2631</strong>
+                      <span class="muted">48526 5486972 05546</span>
+                    </div>
+                  </div>
+
+                  <div class="pay-card">
+                    <div class="pay-ico alt"></div>
+                    <div class="pay-info">
+                      <p>Mastercard</p>
+                      <strong>$122.2631</strong>
+                      <span class="muted">48526 5486972 05546</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-3">
+              <!-- Recent Transactions -->
+              <div class="card card-table">
+                <div class="card-head">
+                  <p class="card-title">Recent Transactions</p>
+
+                  <div class="table-actions">
+                    <button class="btn btn-outline small">
+                      This Month
+                      <figure>
+                        <img
+                          src="./assets/dashboard/bottom-chevron-icon.svg"
+                          alt=""
+                        />
+                      </figure>
+                    </button>
+                    <button class="filter-btn">
+                      <figure>
+                        <img
+                          src="./assets/dashboard/filter-menu-icon.svg"
+                          alt="filter"
+                        />
+                      </figure>
+                    </button>
+                  </div>
+                </div>
+                <div class="table-scroll">
+                  <div class="table">
+                    <div class="table-head">
+                      <span>Transaction Name</span>
+                      <span>Accounts</span>
+                      <span>Date & Time</span>
+                      <span>Amounts</span>
+                      <span>Status</span>
+                    </div>
+
+                    <div class="table-row">
+                      <strong
+                        >Dividend Payment
+                        <span>Investment</span>
+                      </strong>
+                      <span class="card-type visa">Platinum Plus Visa</span>
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt plus">+$25.25</span>
+                      <span class="status done">Completed</span>
+                    </div>
+
+                    <div class="table-row">
+                      <strong
+                        >Grocery Shopping
+                        <span>Food&Dining</span>
+                      </strong>
+                      <span class="card-type visa">Platinum Plus Visa</span>
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt minus">-$25.25</span>
+                      <span class="status done">Completed</span>
+                    </div>
+
+                    <div class="table-row">
+                      <strong
+                        >Freelance Payments
+                        <span>Income</span>
+                      </strong>
+                      <span class="card-type mastercard"
+                        >Platinum Mastercard</span
+                      >
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt plus">+$25.25</span>
+                      <span class="status done">Completed</span>
+                    </div>
+
+                    <div class="table-row">
+                      <strong
+                        >Electricity Bill
+                        <span>Ulities</span>
+                      </strong>
+                      <span class="card-type visa">Platinum Plus Visa</span>
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt minus">-$25.25</span>
+                      <span class="status pending">Pending</span>
+                    </div>
+                    <div class="table-row">
+                      <strong
+                        >Flipkart Shopping
+                        <span>Shopping</span>
+                      </strong>
+                      <span class="card-type visa">Platinum Plus Visa</span>
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt minus">-$25.25</span>
+                      <span class="status done">Completed</span>
+                    </div>
+                    <div class="table-row">
+                      <strong
+                        >Roofcafe
+                        <span>Food&Dining</span>
+                      </strong>
+                      <span class="card-type visa">Platinum Plus Visa</span>
+                      <span class="muted">2024-05-20 <br />12:25pm</span>
+                      <span class="amt minus">-$25.25</span>
+                      <span class="status done">Completed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Savings Plan -->
+              <div class="card card-savings">
+                <div class="card-head">
+                  <p class="card-title">Savings Plan</p>
+                  <button class="btn btn-outline small">
+                    <figure>
+                      <img
+                        src="./assets/dashboard/plus-icon-60.svg"
+                        alt="down arrow"
+                      />
+                    </figure>
+                    Add Plans
+                  </button>
+                </div>
+
+                <p class="muted">Total Savings</p>
+                <strong class="big">$122.000</strong>
+
+                <div class="saving-item">
+                  <p>Emergency Funds</p>
+                  <div class="bar-wrap" style="--val: 45%">
+                    <div class="bar-dark"></div>
+                    <div class="bar-light"></div>
+                  </div>
+                  <div class="bar-meta">
+                    <span>$4500 / $10,000</span>
+                    <span>45%</span>
+                  </div>
+                </div>
+
+                <div class="saving-item">
+                  <p>Vacation Funds</p>
+                  <div class="bar-wrap" style="--val: 57%">
+                    <div class="bar-dark"></div>
+                    <div class="bar-light"></div>
+                  </div>
+                  <div class="bar-meta">
+                    <span>$5700 / $10,000</span>
+                    <span>57%</span>
+                  </div>
+                </div>
+
+                <div class="saving-item">
+                  <p>Retirement Funds</p>
+                  <div class="bar-wrap" style="--val: 78%">
+                    <div class="bar-dark"></div>
+                    <div class="bar-light"></div>
+                  </div>
+                  <div class="bar-meta">
+                    <span>$7800 / $10,000</span>
+                    <span>78%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-breakdown">
+                <div class="card-head">
+                  <p class="card-title">Expense Breakdown</p>
+                  <button class="btn btn-outline small">
+                    Today
+                    <figure>
+                      <img
+                        src="./assets/dashboard/bottom-chevron-icon.svg"
+                        alt=""
+                      />
+                    </figure>
+                  </button>
+                </div>
+                <div class="expense-card">
+                  <div class="donut-wrap">
+                    <div class="donut" id="donut">
+                      <div class="donut-center">
+                        <p class="muted">Total Expense</p>
+                        <strong class="big">$1500.00</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="breakdown" id="breakdown">
+                    <div
+                      class="break-row"
+                      data-percent="50"
+                      data-color="#B9FB6A"
+                    >
+                      <span class="tag-percent">50%</span>
+                      <span class="tag">Education</span>
+                      <span class="tag-value">$2100</span>
+                    </div>
+
+                    <div
+                      class="break-row"
+                      data-percent="20"
+                      data-color="#7FA750"
+                    >
+                      <span class="tag-percent">20%</span>
+                      <span class="tag">Rent & Living</span>
+                      <span class="tag-value">$2100</span>
+                    </div>
+
+                    <div
+                      class="break-row"
+                      data-percent="15"
+                      data-color="#709149"
+                    >
+                      <span class="tag-percent">15%</span>
+                      <span class="tag">Investments</span>
+                      <span class="tag-value">$2100</span>
+                    </div>
+
+                    <div
+                      class="break-row"
+                      data-percent="10"
+                      data-color="#627C42"
+                    >
+                      <span class="tag-percent">10%</span>
+                      <span class="tag">Grocery</span>
+                      <span class="tag-value">$2100</span>
+                    </div>
+
+                    <div
+                      class="break-row"
+                      data-percent="5"
+                      data-color="#53673C"
+                    >
+                      <span class="tag-percent">5%</span>
+                      <span class="tag">Shopping</span>
+                      <span class="tag-value">$2100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
