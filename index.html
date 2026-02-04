@@ -1,12 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Fin Pocket</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon_io/favicon-16x16.png"
+    />
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -16,45 +30,57 @@
       <!-- SIDEBAR -->
       <aside class="sidebar">
         <label for="menuToggle" class="sidebar-close">✕</label>
-        <div class="brand">
-          <a href="#" class="brand-logo">
-            <figure>
-              <img src="./assets/dashboard/logo.svg" alt="logo" />
-            </figure>
-          </a>
-        </div>
-
-        <div class="user">
-          <div class="user-img"></div>
-          <div class="user-info">
-            <h1>Rajan Dutta</h1>
-            <p>Personal Account</p>
+        <div class="sidebar-header">
+          <div class="brand">
+            <a
+              href="https://bikram8538.github.io/fin-pocket/"
+              class="brand-logo"
+            >
+              <figure>
+                <img src="./assets/dashboard/logo.svg" alt="logo" />
+              </figure>
+            </a>
           </div>
-          <div class="user-chevron"></div>
+
+          <div class="user">
+            <div class="user-img"></div>
+            <div class="user-info">
+              <strong class="user-name">Rajan Dutta</strong>
+              <span class="ac-type">Personal Account</span>
+            </div>
+            <div class="user-chevron"></div>
+          </div>
         </div>
 
-        <p class="menu-title">MAIN MENU</p>
-        <nav class="nav top-nav">
-          <a class="nav-link active" href="#">
-            <span class="ico"></span> Dashboard
-          </a>
-          <a class="nav-link" href="#"><span class="ico"></span> Payments</a>
-          <a class="nav-link" href="#"
-            ><span class="ico"></span> Transactions</a
-          >
-          <a class="nav-link" href="#"><span class="ico"></span> My wallets</a>
-          <a class="nav-link" href="#"
-            ><span class="ico"></span> Savings plan</a
-          >
-        </nav>
+        <!-- ✅ SCROLL AREA -->
+        <div class="sidebar-scroll">
+          <p class="menu-title">MAIN MENU</p>
+          <nav class="nav top-nav">
+            <a class="nav-link active" href="./index.html">
+              <span class="ico"></span> Dashboard
+            </a>
+            <a class="nav-link" href="#"><span class="ico"></span> Payments</a>
+            <a class="nav-link" href="#"
+              ><span class="ico"></span> Transactions</a
+            >
+            <a class="nav-link" href="#"
+              ><span class="ico"></span> My wallets</a
+            >
+            <a class="nav-link" href="#"
+              ><span class="ico"></span> Savings plan</a
+            >
+          </nav>
 
-        <p class="menu-title">PREFERENCE</p>
-        <nav class="nav bottom-nav">
-          <a class="nav-link" href="#"><span class="ico"></span> Promos</a>
-          <a class="nav-link" href="#"><span class="ico"></span> Settings</a>
-          <a class="nav-link" href="#"><span class="ico"></span> Help center</a>
-          <a class="nav-link" href="#"><span class="ico"></span> Log out</a>
-        </nav>
+          <p class="menu-title">PREFERENCE</p>
+          <nav class="nav bottom-nav">
+            <a class="nav-link" href="#"><span class="ico"></span> Promos</a>
+            <a class="nav-link" href="#"><span class="ico"></span> Settings</a>
+            <a class="nav-link" href="#"
+              ><span class="ico"></span> Help center</a
+            >
+            <a class="nav-link" href="#"><span class="ico"></span> Log out</a>
+          </nav>
+        </div>
 
         <div class="upgrade">
           <div class="upgrade-top">
@@ -82,7 +108,7 @@
             <!-- ✅ MENU BUTTON -->
             <label for="menuToggle" class="menu-btn">☰</label>
 
-            <h1 class="hello">Hello! Rajan,</h1>
+            <strong class="hello">Hello! Rajan,</strong>
           </div>
 
           <div class="topbar-right">
@@ -95,7 +121,7 @@
             <button class="icon-btn"></button>
 
             <div class="profile-mini">
-              <span class="name">Rajan Dutta</span>
+              <strong class="name">Rajan Dutta</strong>
               <span class="avatar"></span>
             </div>
           </div>
@@ -108,7 +134,7 @@
               <!-- Total Balance -->
               <div class="card card-balance">
                 <div class="card-head">
-                  <p class="card-title">Total Balance</p>
+                  <h2 class="card-title">Total Balance</h2>
                   <button class="chip-plus">
                     <figure>
                       <img
@@ -149,7 +175,7 @@
               <!-- Enhancement -->
               <div class="card card-enh">
                 <div class="card-head">
-                  <p class="card-title">Enhancement</p>
+                  <h2 class="card-title">Enhancement</h2>
                   <button class="btn btn-outline small">
                     <figure>
                       <img
@@ -215,7 +241,7 @@
               <!-- Final score -->
               <div class="card card-score">
                 <div class="card-head">
-                  <p class="card-title">Final Score</p>
+                  <h2 class="card-title">Final Score</h2>
                   <button class="dot-menu">•••</button>
                 </div>
 
@@ -237,7 +263,7 @@
               <div class="card card-chart">
                 <div class="card-head">
                   <div class="chart-top">
-                    <p class="card-title">Cashflow</p>
+                    <h2 class="card-title">Cashflow</h2>
                     <p class="muted">Total Balance</p>
                     <strong class="big">$ 20,000</strong>
                   </div>
@@ -272,7 +298,7 @@
 
               <div class="card card-bal">
                 <div class="card-head">
-                  <p class="card-title">Balance</p>
+                  <h2 class="card-title">Balance</h2>
                 </div>
 
                 <p class="muted">Total Balance</p>
@@ -303,7 +329,7 @@
               <!-- Recent Transactions -->
               <div class="card card-table">
                 <div class="card-head">
-                  <p class="card-title">Recent Transactions</p>
+                  <h2 class="card-title">Recent Transactions</h2>
 
                   <div class="table-actions">
                     <button class="btn btn-outline small">
@@ -407,7 +433,7 @@
               <!-- Savings Plan -->
               <div class="card card-savings">
                 <div class="card-head">
-                  <p class="card-title">Savings Plan</p>
+                  <h2 class="card-title">Savings Plan</h2>
                   <button class="btn btn-outline small">
                     <figure>
                       <img
@@ -461,7 +487,7 @@
 
               <div class="card card-breakdown">
                 <div class="card-head">
-                  <p class="card-title">Expense Breakdown</p>
+                  <h2 class="card-title">Expense Breakdown</h2>
                   <button class="btn btn-outline small">
                     Today
                     <figure>
