@@ -194,6 +194,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  height: 100dvh;
 }
 .sidebar-scroll::-webkit-scrollbar {
   width: 5px;
@@ -554,6 +555,7 @@ body {
 }
 .col {
   height: 100vh;
+  height: 100dvh;
   display: grid;
   gap: 16px;
 }
