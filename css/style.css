@@ -1217,9 +1217,6 @@ body {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .sidebar {
-    padding-bottom: 180px;
-  }
   .pay-cards,
   .expense-card {
     grid-template-columns: 1fr;
