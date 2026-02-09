@@ -311,7 +311,7 @@ body {
   background-image: url("../assets/dashboard/my-wallets-icon.svg");
 }
 .top-nav .nav-link:nth-child(5) .ico {
-  background-image: url("../assets/dashboard/savings-plan-icon.svg");
+  background-image: url("../assets/dashboard/goal.svg");
 }
 .bottom-nav .nav-link:nth-child(1) .ico {
   background-image: url("../assets/dashboard/promos-icon.svg");
