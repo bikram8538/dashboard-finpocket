@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f14;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 60px;
+  background: #12161c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #1c1f26;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-dot {
+  width: 12px;
+  height: 12px;
+  background: #a6f750;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile {
+  width: 28px;
+  height: 28px;
+  background: #999;
+  border-radius: 50%;
+}
+
+/* TITLE */
+.title-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.title-section h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.title-section p {
+  font-size: 13px;
+  color: #8a8f98;
+  margin-top: 8px;
+}
+
+/* CARDS */
+.card {
+  background: #111418;
+  border: 1px solid #1c1f26;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 40px auto;
+}
+
+.budget-card {
+  max-width: 700px;
+}
+
+.table-card {
+  max-width: 1000px;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* CARD HEADER */
+.card-header {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-header {
+  padding: 20px 30px;
+  border-bottom: 1px solid #1c1f26;
+  justify-content: space-between;
+}
+
+.green-dot {
+  width: 10px;
+  height: 10px;
+  background: #a6f750;
+  border-radius: 50%;
+}
+
+/* FORM */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #8a8f98;
+}
+
+input, select {
+  background: #0f1217;
+  border: 1px solid #242832;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.full {
+  width: 100%;
+}
+
+.btn-green {
+  background: #a6f750;
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-green:hover {
+  background: #93e640;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 11px;
+  color: #8a8f98;
+  text-align: left;
+  padding: 14px 30px;
+  border-bottom: 1px solid #1c1f26;
+}
+
+td {
+  padding: 18px 30px;
+  border-bottom: 1px solid #1c1f26;
+  font-size: 13px;
+}
+
+tbody tr:hover {
+  background: #151a21;
+}
+
+/* FOOTER */
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 12px;
+  color: #8a8f98;
+}
+
+.pagination button {
+  background: #1c1f26;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #2a2f39;
+}
+
+/* PAGE FOOTER */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color:#FFFFFF;
+  padding: 25px 0;
+  margin-top: 80px;
+
+  border-top: 1px solid #1c1f26;
+  background: #0b0f14;   
+}
+/* CUSTOM SELECT */
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.select-trigger {
+  background: #0f1217;
+  border: 1px solid #242832;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* DROPDOWN CARD */
+.select-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 15px 0;
+  display: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+/* ITEM STYLE */
+.select-item {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  position: relative;
+}
+
+
+.select-item::after {
+  content: "↗";
+  position: absolute;
+  right: 20px;
+  background: #a6f750;
+  color: black;
+  font-size: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-item:hover {
+  background: rgba(166, 247, 80, 0.08);
+}
+.select-trigger {
+  background: #0f1217;
+  border: 1px solid #242832;
+  border-radius: 6px;
+  padding: 10px 40px 10px 12px;  /* right side space */
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.select-trigger::after {
+  content: "▾";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #8a8f98;
+  pointer-events: none;
+  transition: 0.3s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Rotate when open */
+.custom-select.active .select-trigger::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+/* Large Devices (1200px and down) */
+@media (max-width: 1200px) {
+  .table-card {
+    max-width: 95%;
+  }
+
+  .budget-card {
+    max-width: 90%;
+  }
+}
+
+/* Medium Devices (992px and down) */
+@media (max-width: 992px) {
+
+  .title-section h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  th, td {
+    padding: 14px 20px;
+  }
+}
+
+/* Tablets (768px and down) */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .topbar {
+    padding: 0 20px;
+  }
+
+  .profile-mini .name {
+    display: none;
+  }
+
+  /* Form Row Stack */
+  .form-row {
+    flex-direction: column;
+  }
+
+  .budget-card {
+    padding: 20px;
+  }
+
+  .table-card {
+    margin: 20px;
+  }
+
+  /* Table Scroll */
+  .table-card {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 700px;
+  }
+
+  .table-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
+
+/* Mobile Devices (576px and down) */
+@media (max-width: 576px) {
+
+  .title-section {
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+
+  .title-section h1 {
+    font-size: 18px;
+  }
+
+  .title-section p {
+    font-size: 12px;
+  }
+
+  .card {
+    margin: 20px 15px;
+    padding: 18px;
+  }
+
+  .card-header {
+    font-size: 13px;
+  }
+
+  th {
+    font-size: 10px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .btn-green {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+    font-size: 11px;
+  }
+}
+
+/* Small Mobile (400px and down) */
+@media (max-width: 400px) {
+
+  .title-section h1 {
+    font-size: 16px;
+  }
+
+  .select-trigger {
+    font-size: 12px;
+    padding: 8px 35px 8px 10px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .pagination button {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+}
+
+/* Extra Small Devices (320px and down) */
+@media (max-width: 320px) {
+
+  body {
+    font-size: 12px;
+  }
+
+  .title-section h1 {
+    font-size: 14px;
+  }
+
+  .title-section p {
+    font-size: 11px;
+  }
+
+  .card {
+    margin: 15px 8px;
+    padding: 12px;
+  }
+
+  .btn-green {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .table-footer span {
+    font-size: 10px;
+  }
+
+  .pagination button {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+}
