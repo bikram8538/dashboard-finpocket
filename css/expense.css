@@ -100,9 +100,18 @@ figure {
 
 /* GRID */
 .grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1.2fr;
+  gap: 25px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
   gap: 25px;
+}
+.grid  > div {
+  display: flex;
+  max-width: 50%;
+  flex-basis: 50%;
 }
 
 /* CARD */
@@ -194,12 +203,15 @@ textarea.input {
   /* padding-bottom: 15px; */
   padding: 14px 14px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .table td {
   padding: 14px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding: 14px 14px;
+  white-space: nowrap;
+
 }
 .table td:nth-child(1){
   color: #ffffff;
@@ -357,7 +369,11 @@ textarea.input {
 /* Tablet */
 @media (max-width: 1200px) {
   .grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .grid > div {
+    max-width: 100%;
+    flex-basis: 100%;
   }
 
   .stats {
@@ -372,7 +388,7 @@ textarea.input {
   }
 
   .container {
-    padding: 25px 18px;
+    padding: 24px 16px;
   }
 
   .title {
@@ -388,7 +404,7 @@ textarea.input {
   }
 
   .card {
-    padding: 18px;
+    padding: 12px;
   }
 
   .profile span {
