@@ -9,7 +9,9 @@ body {
   font-family: "Inter", sans-serif;
   color: #ffffff;
 }
-
+a{
+  text-decoration: none;
+}
 /* NAVBAR */
 .navbar {
   height: 60px;

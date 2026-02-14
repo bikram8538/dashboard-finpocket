@@ -181,44 +181,122 @@ textarea.input {
 .table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px;
 }
-
+.table thead{
+  background: #0F172A;
+}
 .table th {
   text-align: left;
-  opacity: 0.6;
-  font-weight: 400;
-  font-size: 13px;
-  padding-bottom: 15px;
+  color: #94A3B8;
+  font-weight: 100;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  /* padding-bottom: 15px; */
+  padding: 14px 14px;
+  text-transform: uppercase;
 }
 
 .table td {
   padding: 14px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 14px 14px;
 }
+.table td:nth-child(1){
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+  text-align: left;
+}
+.table td:nth-child(3){
+  color: #94A3B8;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+.table td:nth-child(4){
+  text-align: right;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: #ffffff;
+}
+.table th:nth-child(4){
+  text-align: right;
+}
+.table th:nth-child(5){
+  text-align: center;
+}
+
+
+
+
+
 
 .badge {
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.badge > div{
+  width: 15px;
+  height: 15px;
 }
 
 .travel {
-  background: #1b3f5a;
-  color: #6cc6ff;
+  background: rgba(14, 165, 233, 0.1);
+  color:  rgba(14, 165, 233, 1);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+.travel-ico{
+  background: url('../assets/expences/travel-ico.svg') center/ 15px no-repeat;
 }
 .meal {
-  background: #5a2f1b;
-  color: #ff9d6c;
+  color:  rgba(249, 115, 22, 1);
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+.meal-ico{
+  background: url('../assets/expences/meals-ico.svg') center/ 15px no-repeat;
 }
 .office {
-  background: #1b5a3a;
-  color: #6cffb0;
+  color: rgba(16, 185, 129, 1);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+.office-ico{
+  background: url('../assets/expences/office-suppeliers-ico.svg') center/ 15px no-repeat;
 }
 .software {
-  background: #3b1b5a;
-  color: #c96cff;
+  color: rgb(168, 85, 247);
+  color: rgba(168, 85, 247, 1);
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
 }
+.soft-ico{
+  background: url('../assets/expences/software-ico.svg') center/ 15px no-repeat;
+}
+
+.actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-btn-ico{
+  width: 20px;
+  height: 20px;
+  background: url('../assets/expences/edit-ico.svg') center / 15px no-repeat;
+}
+.del-btn-ico{
+  width: 20px;
+  height: 20px;
+  background: url('../assets/expences/del-ico.svg') center / 15px no-repeat;
+}
+
 
 /* STATS */
 .stats {
@@ -262,15 +340,14 @@ textarea.input {
 
 /* FOOTER */
 .footer {
-  padding: 25px 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  opacity: 0.5;
-  font-size: 14px;
-  flex-wrap: wrap;
-  gap: 10px;
+  text-align: center;
+  font-size: 12px;
+  color:#FFFFFF;
+  padding: 25px 0;
+  margin-top: 80px;
+
+  border-top: 1px solid #1c1f26;
+  background: #0b0f14;   
 }
 
 /* ===================== */
@@ -334,9 +411,11 @@ textarea.input {
     padding: 12px;
     font-size: 14px;
   }
+  .footer {
+    padding: 20px 10px;
+    font-size: 11px;
+  }
 }
-
-
 
 
 .financial-card {
