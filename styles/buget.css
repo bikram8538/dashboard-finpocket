@@ -6,7 +6,7 @@
 
 body {
   background: #0b0f14;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #ffffff;
 }
 
@@ -116,6 +116,16 @@ body {
   display: flex;
   gap: 20px;
 }
+.category {
+  display: flex;
+  display: flex;
+  align-items: center;
+}
+.cat-icon > img {
+  width: 32px;
+  object-fit: cover;
+  margin-right: 12px;
+}
 
 .form-group {
   flex: 1;
@@ -130,7 +140,8 @@ body {
   color: #8a8f98;
 }
 
-input, select {
+input,
+select {
   background: #0f1217;
   border: 1px solid #242832;
   border-radius: 6px;
@@ -210,12 +221,12 @@ tbody tr:hover {
 .footer {
   text-align: center;
   font-size: 12px;
-  color:#FFFFFF;
+  color: #ffffff;
   padding: 25px 0;
   margin-top: 80px;
 
   border-top: 1px solid #1c1f26;
-  background: #0b0f14;   
+  background: #0b0f14;
 }
 /* CUSTOM SELECT */
 .custom-select {
@@ -242,7 +253,7 @@ tbody tr:hover {
   border-radius: 12px;
   padding: 15px 0;
   display: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
@@ -257,7 +268,6 @@ tbody tr:hover {
   font-size: 14px;
   position: relative;
 }
-
 
 .select-item::after {
   content: "↗";
@@ -281,12 +291,11 @@ tbody tr:hover {
   background: #0f1217;
   border: 1px solid #242832;
   border-radius: 6px;
-  padding: 10px 40px 10px 12px;  /* right side space */
+  padding: 10px 40px 10px 12px; /* right side space */
   font-size: 13px;
   cursor: pointer;
   position: relative;
 }
-
 
 .select-trigger::after {
   content: "▾";
@@ -330,7 +339,6 @@ img {
 
 /* Medium Devices (992px and down) */
 @media (max-width: 992px) {
-
   .title-section h1 {
     font-size: 22px;
   }
@@ -339,14 +347,14 @@ img {
     padding: 25px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 14px 20px;
   }
 }
 
 /* Tablets (768px and down) */
 @media (max-width: 768px) {
-
   /* Navbar */
   .topbar {
     padding: 0 20px;
@@ -387,7 +395,6 @@ img {
 
 /* Mobile Devices (576px and down) */
 @media (max-width: 576px) {
-
   .title-section {
     margin-top: 40px;
     padding: 0 15px;
@@ -402,7 +409,7 @@ img {
   }
 
   .card {
-    margin: 20px 15px;
+    margin: 20px auto 15px;
     padding: 18px;
   }
 
@@ -431,7 +438,6 @@ img {
 
 /* Small Mobile (400px and down) */
 @media (max-width: 400px) {
-
   .title-section h1 {
     font-size: 16px;
   }
@@ -458,7 +464,6 @@ img {
 
 /* Extra Small Devices (320px and down) */
 @media (max-width: 320px) {
-
   body {
     font-size: 12px;
   }
@@ -472,7 +477,7 @@ img {
   }
 
   .card {
-    margin: 15px 8px;
+    margin: 15px auto 8px;
     padding: 12px;
   }
 
