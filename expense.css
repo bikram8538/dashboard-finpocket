@@ -1,0 +1,128 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: linear-gradient(180deg,#0b0d0f,#000);
+  color: white;
+}
+
+/* APP */
+.app {
+  min-height: 100vh;
+  padding: clamp(16px, 2vw, 32px);
+}
+
+.main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ADD EXPENSE CARD */
+.add-expense {
+  background: #282828;
+  border-radius: 20px;
+  padding: clamp(20px, 3vw, 40px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* HEADER */
+.add-expense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.add-expense-header h1 {
+  font-size: clamp(28px, 3.5vw, 48px);
+  letter-spacing: -0.03em;
+}
+
+/* BUTTON */
+.btn {
+  border-radius: 14px;
+  padding: 14px 26px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-secondary {
+  background: #b9fb6a;
+  color: #0b0d0f;
+}
+
+.btn-secondary:hover {
+  background: #a4ea50;
+}
+
+/* FORM GRID */
+.expense-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(18px, 2vw, 26px);
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
+}
+
+/* LABEL */
+.form-group label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* INPUTS */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: #0a0c10;
+  border: 1px solid #30363d;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #b9fb6a;
+  outline: none;
+}
+
+/* TEXTAREA */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* MOBILE EXTRA */
+@media (max-width: 480px) {
+  .add-expense-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-secondary {
+    width: 100%;
+  }
+}
