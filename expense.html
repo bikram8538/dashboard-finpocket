@@ -135,7 +135,7 @@
             </figure>
             <h2>Recent Expenses</h2>
           </div>
-
+          <div class="table-wrapper">
           <table class="table">
             <thead>
               <tr>
@@ -143,40 +143,66 @@
                 <th>Category</th>
                 <th>Notes</th>
                 <th>Amount</th>
+                <th>Actions</th>
               </tr>
             </thead>
 
             <tbody>
               <tr>
                 <td>Oct 24, 2023</td>
-                <td><span class="badge travel">Travel</span></td>
+                <td><span class="badge travel"><div class="travel-ico"></div>Travel</span></td>
                 <td>Flight to Chicago for Q4 conference</td>
                 <td>$450.00</td>
+                <td>
+                  <ul class="actions">
+                    <li><button class="edit-btn-ico"></button></li>
+                    <li><button class="del-btn-ico"></button></li>
+                  </ul>
+                </td>
               </tr>
 
               <tr>
                 <td>Oct 23, 2023</td>
-                <td><span class="badge meal">Meals</span></td>
+                <td><span class="badge meal"><div class="meal-ico"></div>Meals</span></td>
                 <td>Client lunch meeting</td>
                 <td>$84.50</td>
+                <td>
+                  <ul class="actions">
+                    <li><button class="edit-btn-ico"></button></li>
+                    <li><button class="del-btn-ico"></button></li>
+                  </ul>
+                </td>
               </tr>
 
               <tr>
                 <td>Oct 22, 2023</td>
-                <td><span class="badge office">Office Supplies</span></td>
+                <td><span class="badge office"><div class="office-ico"></div>Office Supplies</span></td>
                 <td>Printer toner and paper</td>
                 <td>$125.20</td>
+                <td>
+                  <ul class="actions">
+                    <li><button class="edit-btn-ico"></button></li>
+                    <li><button class="del-btn-ico"></button></li>
+                  </ul>
+                </td>
               </tr>
 
               <tr>
                 <td>Oct 20, 2023</td>
-                <td><span class="badge software">Software</span></td>
+                <td><span class="badge software"><div class="soft-ico"></div>Software</span></td>
                 <td>Annual cloud storage subscription</td>
                 <td>$240.00</td>
+                <td>
+                  <ul class="actions">
+                    <li><button class="edit-btn-ico"></button></li>
+                    <li><button class="del-btn-ico"></button></li>
+                  </ul>
+                </td>
               </tr>
 
             </tbody>
           </table>
+          </div>
         </div>
 
         <!-- STATS -->
@@ -245,10 +271,11 @@
   </div>
 
   <!-- FOOTER -->
-  <div class="footer">
-    <div>© 2023 ExpensifyPro. All rights reserved.</div>
-    <div>Privacy Policy &nbsp;&nbsp; Terms of Service &nbsp;&nbsp; Support</div>
-  </div>
+    <div class="footer">
+      <p class="foot">
+        © 2026 <a href="#">Fin Pocket</a>. All financial data is securely encrypted.
+      </p>
+    </div>
 
 </body>
 
