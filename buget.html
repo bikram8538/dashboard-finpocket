@@ -1,146 +1,169 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fin Pocket Dashboard</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fin Pocket Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="topbar.css" />
+    <link rel="stylesheet" href="./styles/buget.css" />
+  </head>
 
-  <link rel="stylesheet" href="topbar.css" />
-  <link rel="stylesheet" href="./styles/buget.css" />
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <header class="topbar">
-    <div class="topbar-left">
-      <div class="brand">
-        <a href="https://bikram8538.github.io/fin-pocket/" target="_blank" class="brand-logo">
-          <figure>
-            <img src="./assets/dashboard/logo.svg" alt="logo" />
-          </figure>
-        </a>
-      </div>
-    </div>
-
-    <div class="topbar-right">
-
-
-      <div class="profile-mini">
-        <strong class="name">Rajan Dutta</strong>
-        <span class="avatar"></span>
-      </div>
-    </div>
-  </header>
-
-
-  <div class="title-section">
-    <h1>Monthly Budget Management</h1>
-    <p>Plan your expenses and take control of your monthly spending.</p>
-  </div>
-
-
-  <div class="card budget-card">
-    <div class="card-header">
-      <span class="green-dot"></span>
-      Create New Budget
-    </div>
-
-    <div class="form-row">
-      <div class="form-group custom-select-wrapper">
-        <label>Category</label>
-
-        <div class="custom-select">
-          <div class="select-trigger">
-            Select category
-          </div>
-
-          <div class="select-dropdown">
-            <div class="select-item">Housing</div>
-            <div class="select-item">Food</div>
-            <div class="select-item">Transport</div>
-            <div class="select-item">Bills</div>
-            <div class="select-item">EMI</div>
-          </div>
+  <body>
+    <!-- NAVBAR -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="brand">
+          <a
+            href="https://bikram8538.github.io/fin-pocket/"
+            target="_blank"
+            class="brand-logo"
+          >
+            <figure>
+              <img src="./assets/dashboard/logo.svg" alt="logo" />
+            </figure>
+          </a>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>Month (YYYY-MM)</label>
-        <input type="text" placeholder="---- --" />
+      <div class="topbar-right">
+        
+
+        <div class="profile-mini">
+          <strong class="name">Rajan Dutta</strong>
+          <span class="avatar"></span>
+        </div>
       </div>
+    </header>
+
+  
+    <div class="title-section">
+      <h1>Monthly Budget Management</h1>
+      <p>Plan your expenses and take control of your monthly spending.</p>
     </div>
 
-    <div class="form-group full">
-      <label>Budget Amount</label>
-      <input type="text" placeholder="$ 0.00" />
-    </div>
-
-    <button class="btn-green">Save Budget</button>
-  </div>
-
-
-  <div class="card table-card">
-    <div class="card-header table-header">
-      <div>
+  
+    <div class="card budget-card">
+      <div class="card-header">
         <span class="green-dot"></span>
-        Existing Budgets
+        Create New Budget
       </div>
-      <div class="entries">3 ENTRIES</div>
+
+      <div class="form-row">
+       <div class="form-group custom-select-wrapper">
+  <label>Category</label>
+
+  <div class="custom-select">
+    <div class="select-trigger">
+      Select category
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>CATEGORY</th>
-          <th>MONTH</th>
-          <th>AMOUNT</th>
-          <th>ACTIONS</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Food & Dining</td>
-          <td>2023-10</td>
-          <td>$1,200.00</td>
-          <td>✎ 🗑</td>
-        </tr>
-
-        <tr>
-          <td>Travel</td>
-          <td>2023-11</td>
-          <td>$3,500.00</td>
-          <td>✎ 🗑</td>
-        </tr>
-
-        <tr>
-          <td>Rent / Mortgage</td>
-          <td>2023-10</td>
-          <td>$2,800.00</td>
-          <td>✎ 🗑</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="table-footer">
-      <span>Showing 1 to 3 of 3 entries</span>
-      <div class="pagination">
-        <button>Previous</button>
-        <button class="active">Next</button>
-      </div>
+    <div class="select-dropdown">
+      <div class="select-item">Housing</div>
+      <div class="select-item">Food</div>
+      <div class="select-item">Transport</div>
+      <div class="select-item">Bills</div>
+      <div class="select-item">EMI</div>
     </div>
   </div>
+</div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    © 2026 <a href="#">Fin Pocket</a>. All financial data is securely encrypted.
+        <div class="form-group">
+          <label>Month (YYYY-MM)</label>
+          <input type="text" placeholder="---- --" />
+        </div>
+      </div>
 
-  </div>
-</body>
-<script src="./js/dashboard.js"></script>
+      <div class="form-group full">
+        <label>Budget Amount</label>
+        <input type="text" placeholder="$ 0.00" />
+      </div>
 
+      <button class="btn-green">Save Budget</button>
+    </div>
+
+
+    <div class="card table-card">
+      <div class="card-header table-header">
+        <div>
+          <span class="green-dot"></span>
+          Existing Budgets
+        </div>
+        <div class="entries">3 ENTRIES</div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>CATEGORY</th>
+            <th>MONTH</th>
+            <th>AMOUNT</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+       <tbody>
+  <tr>
+    <td>
+      <div class="category">
+        <span class="cat-icon food"><img src="./assets/icon-1.png" alt=""></span>
+        Food & Dining
+      </div>
+    </td>
+    <td>2023-10</td>
+    <td>$1,200.00</td>
+    <td class="actions">✎ 🗑</td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="category">
+        <span class="cat-icon travel"><img src="./assets/icon-2.png" alt=""></span>
+        Travel
+      </div>
+    </td>
+    <td>2023-11</td>
+    <td>$3,500.00</td>
+    <td class="actions">✎ 🗑</td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="category">
+        <span class="cat-icon rent"><img src="./assets/icon-3.png" alt=""></span>
+        Rent / Mortgage
+      </div>
+    </td>
+    <td>2023-10</td>
+    <td>$2,800.00</td>
+    <td class="actions">✎ 🗑</td>
+  </tr>
+</tbody>
+
+      </table>
+
+      <div class="table-footer">
+        <span>Showing 1 to 3 of 3 entries</span>
+        <div class="pagination">
+          <button>Previous</button>
+          <button class="active">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p class="foot">
+        © 2023 FinTrack Pro. All financial data is securely encrypted.
+      </p>
+    </div>
+  </body>
+  <script src="./js/dashboard.js"></script>
 </html>
