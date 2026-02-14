@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fin Pocket Dashboard</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/expense.css">
+  <link rel="stylesheet" href="topbar.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <!-- ✅ MENU BUTTON -->
+      <div class="brand">
+        <a href="https://bikram8538.github.io/fin-pocket/" target="_blank" class="brand-logo">
+          <figure>
+            <img src="./assets/dashboard/logo.svg" alt="logo" />
+          </figure>
+        </a>
+      </div>
+    </div>
+
+    <div class="topbar-right">
+
+
+      <!-- <button class="icon-btn"></button> -->
+
+      <div class="profile-mini">
+        <strong class="name">Rajan Dutta</strong>
+        <span class="avatar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+    <h1 class="title">Expense Management</h1>
+    <p class="subtitle">Track and manage your business expenditures with ease.</p>
+
+    <div class="grid">
+
+      <!-- LEFT FORM -->
+      <div class="card">
+        <div class="card-head">
+          <figure>
+            <img src="./assets/expences/add-icon.svg" alt="add-icon">
+          </figure>
+          <h2>Add New Expense</h2>
+        </div>
+        <form action="">
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select class="input" id="category">
+              <option disabled selected>Select category</option>
+
+              <optgroup label="Operational">
+                <option>Office Supplies</option>
+                <option>Utilities</option>
+                <option>Rent</option>
+                <option>Maintenance</option>
+                <option>Internet & Phone</option>
+              </optgroup>
+
+              <optgroup label="Travel & Client">
+                <option>Travel</option>
+                <option>Accommodation</option>
+                <option>Meals</option>
+                <option>Client Entertainment</option>
+                <option>Transportation</option>
+              </optgroup>
+
+              <optgroup label="Technology">
+                <option>Software Subscription</option>
+                <option>Hardware</option>
+                <option>Cloud Services</option>
+                <option>Web Hosting</option>
+                <option>Domain Renewal</option>
+              </optgroup>
+
+              <optgroup label="Marketing">
+                <option>Advertising</option>
+                <option>Social Media Ads</option>
+                <option>Printing</option>
+                <option>Branding</option>
+                <option>Content Creation</option>
+              </optgroup>
+
+              <optgroup label="HR & Admin">
+                <option>Salaries</option>
+                <option>Freelancers</option>
+                <option>Training</option>
+                <option>Recruitment</option>
+                <option>Insurance</option>
+              </optgroup>
+
+              <optgroup label="Finance">
+                <option>Bank Charges</option>
+                <option>Taxes</option>
+                <option>Loan Repayment</option>
+                <option>Accounting Services</option>
+              </optgroup>
+            </select>
+
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input class="input" placeholder="$ 0.00" id="amount" />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" name="" id="date" class="input">
+          </div>
+          <div class="form-group">
+            <label for="note">Note</label>
+            <textarea class="input" id="note" placeholder="Description of the expense..."></textarea>
+          </div>
+          <input type="submit" value="Submit Expense" class="submit-btn">
+        </form>
+      </div>
+
+      <!-- RIGHT TABLE -->
+      <div class="card">
+        <div class="card-top">
+
+          <div class="card-head">
+            <figure>
+              <img src="./assets/expences/recent-icon.svg" alt="recent-icon">
+            </figure>
+            <h2>Recent Expenses</h2>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Notes</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Oct 24, 2023</td>
+                <td><span class="badge travel">Travel</span></td>
+                <td>Flight to Chicago for Q4 conference</td>
+                <td>$450.00</td>
+              </tr>
+
+              <tr>
+                <td>Oct 23, 2023</td>
+                <td><span class="badge meal">Meals</span></td>
+                <td>Client lunch meeting</td>
+                <td>$84.50</td>
+              </tr>
+
+              <tr>
+                <td>Oct 22, 2023</td>
+                <td><span class="badge office">Office Supplies</span></td>
+                <td>Printer toner and paper</td>
+                <td>$125.20</td>
+              </tr>
+
+              <tr>
+                <td>Oct 20, 2023</td>
+                <td><span class="badge software">Software</span></td>
+                <td>Annual cloud storage subscription</td>
+                <td>$240.00</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <!-- STATS -->
+        <div class="stats">
+
+          <div class="financial-card">
+            <div class="financial-card-header">
+              <span>Monthly Budget</span>
+              <span class="positive">↗ 12%</span>
+            </div>
+
+            <h3>$5,000.00</h3>
+
+            <div class="progress">
+              <div class="progress-fill"></div>
+            </div>
+
+            <p class="sub-text">65% of budget used</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="financial-card">
+            <div class="financial-card-header">
+              <span>Total Expenses (MTD)</span>
+              <span class="financial-negative">↗ 8.4%</span>
+            </div>
+
+            <h3>$3,249.70</h3>
+
+            <div class="financial-mini-chart">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="financial-card">
+            <div class="financial-card-header">
+              <span>Pending Approvals</span>
+            </div>
+
+            <div class="approval-row">
+
+              <h3>04</h3>
+              <div class="financial-avatars">
+                <figure><img src="./assets/profile/user-1.svg" alt="user-1"></figure>
+                <figure><img src="./assets/profile/user-2.svg" alt="user-2"></figure>
+                <figure><img src="./assets/profile/user-3.svg" alt="user-3"></figure>
+              </div>
+            </div>
+
+            <a href="#" class="fn-btn">View report queue →</a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>© 2023 ExpensifyPro. All rights reserved.</div>
+    <div>Privacy Policy &nbsp;&nbsp; Terms of Service &nbsp;&nbsp; Support</div>
+  </div>
+
+</body>
+
+</html>

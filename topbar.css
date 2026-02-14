@@ -1,0 +1,50 @@
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand-logo {
+  filter: drop-shadow(0 0 22px rgba(185, 255, 90, 0.35));
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #282828;
+  padding: 16px 22px;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.03);
+}
+.profile-mini .name {
+  font-size: 14px;
+  letter-spacing: var(--letter-spacing-300);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+.profile-mini .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: url("../assets/dashboard/profile.svg") center / contain no-repeat;
+}
+
+/* ✅ TOPBAR LEFT (menu + h1) */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

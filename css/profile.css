@@ -713,6 +713,7 @@ background: var(--green);
 
 .positive {
   color: var(--green);
+  color: #b9fb6a;
 }
 
 .financial-negative {
@@ -789,6 +790,7 @@ background: var(--green);
 
 .fn-btn{
     color: var(--green);
+    color: #b9fb6a;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;

@@ -213,6 +213,7 @@ body {
 .sidebar-header {
   flex-shrink: 0;
 }
+
 .brand {
   display: flex;
   align-items: center;
@@ -401,6 +402,7 @@ body {
   /* overflow: hidden; */
   z-index: 44;
 }
+
 .topbar {
   display: flex;
   align-items: center;
