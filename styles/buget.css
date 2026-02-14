@@ -9,8 +9,40 @@ body {
   font-family: "Inter", sans-serif;
   color: #ffffff;
 }
+ul{
+  list-style: none;
+}
 a{
   text-decoration: none;
+}
+button,
+input {
+  border: 0;
+  outline: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+button:hover {
+  opacity: 0.8;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+figure {
+  overflow: hidden;
+
 }
 /* NAVBAR */
 .navbar {
@@ -185,7 +217,9 @@ th {
   padding: 14px 30px;
   border-bottom: 1px solid #1c1f26;
 }
-
+table th:nth-child(4){
+  text-align: center;
+}
 td {
   padding: 18px 30px;
   border-bottom: 1px solid #1c1f26;
@@ -196,6 +230,22 @@ tbody tr:hover {
   background: #151a21;
 }
 
+.actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.edit-btn-ico{
+  width: 20px;
+  height: 20px;
+  background: url('../assets/expences/edit-ico.svg') center / 15px no-repeat;
+}
+.del-btn-ico{
+  width: 20px;
+  height: 20px;
+  background: url('../assets/expences/del-ico.svg') center / 15px no-repeat;
+}
 /* FOOTER */
 .table-footer {
   display: flex;
